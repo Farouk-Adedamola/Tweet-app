@@ -1,0 +1,10 @@
+.modal {
+  background: #1187a4;
+  width: 20vw;
+  margin: 0.6rem auto;
+  padding: 0.3rem 0.8rem;
+  font-weight: normal;
+  font-size: small;
+  text-align: center;
+  border-radius: 5px;
+}

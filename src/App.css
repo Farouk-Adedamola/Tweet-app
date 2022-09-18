@@ -1,0 +1,63 @@
+.app-title {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3.5rem;
+  background-color: #1187a4;
+  padding: 0.7rem 1.5rem;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+.app-title:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .app-title {
+    width: 75vw;
+    margin: 1.5rem auto;
+  }
+}
+
+.header {
+  margin-bottom: 0;
+  color: #000;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 1px 1px #fff;
+}
+
+.underline {
+  height: 0.4rem;
+  width: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.underline:hover {
+  background: #fff;
+}
+
+.header {
+  animation: header 6s linear 0s infinite normal none;
+}
+
+@keyframes header {
+  0% {
+    color: #000;
+    text-shadow: 1px 1px #fff;
+  }
+  35% {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+  }
+  65% {
+    color: rgba(0, 0, 0, 0.636);
+  }
+  100% {
+  }
+}

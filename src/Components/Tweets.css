@@ -1,0 +1,148 @@
+.form {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 90vw;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.585);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 760px) {
+  .form {
+    width: 45vw;
+    margin: 0 auto;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  margin-top: 15px;
+  height: 2rem;
+  width: 65vw;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 760px) {
+  .input {
+    width: 30vw;
+  }
+}
+
+.btn-container {
+  margin: 0.4rem auto;
+}
+
+.btn {
+  background-color: #1ec0ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 760px) {
+  .btn {
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  animation: tweetButton 3s linear 0s infinite normal none;
+}
+
+@keyframes tweetButton {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: translateX(-7px);
+  }
+  80% {
+    transform: translateX(7px);
+  }
+  100% {
+  }
+}
+
+.no-tweet {
+  margin: 2rem auto;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid #1ec0ff;
+}
+
+@media screen and (min-width: 760px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.eachTweet {
+  border-radius: 5px;
+  width: 55vw;
+  margin: 0.8rem auto;
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+@media screen and (min-width: 760px) {
+  .eachTweet {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    background: #fff;
+  }
+}
+
+.eachTweet:hover {
+  transform: scaleX(1.05);
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 760px) {
+  .eachTweet {
+    width: 35vw;
+  }
+}
+
+.eachTweet p {
+  margin-top: 0;
+  font-size: small;
+  padding: 0.4rem 0.6rem;
+}
+
+.btn-del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btn-delete {
+  background: #1187a4;
+  border: none;
+  margin-right: 0.7rem;
+  font-size: small;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+}
+
+.btn-delete:hover {
+  transform: translateX(-3px);
+  transition: all 0.3s;
+}
+
+.btn-dislike {
+  background: #1ec0ff;
+  border: 1px dotted #000;
+}
